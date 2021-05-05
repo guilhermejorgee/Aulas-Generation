@@ -32,7 +32,7 @@ programa
 
 		
 
-		escreva("Isso representa\n",anoscompletos," anos\n",mesescompletos," meses\n",diasrestantes," dias")
+		escreva("Isso representa\n",anoscompletos," ano(s)\n",mesescompletos," mês(es)\n",diasrestantes," dia(s)")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -40,7 +40,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 890; 
+ * @POSICAO-CURSOR = 848; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
