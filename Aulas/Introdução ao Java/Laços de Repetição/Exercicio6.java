@@ -19,7 +19,7 @@ E no final imprimir a média dos números múltiplos de 3. Para sair digitar 0(zero
 			System.out.println("Digite um número");
 			numero = ler.nextInt();
 			
-			if(numero % 3 == 0) {
+			if(numero % 3 == 0 && numero != 0) {
 				cont++;
 				soma = soma + numero;
 			}
