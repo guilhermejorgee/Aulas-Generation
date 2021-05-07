@@ -33,10 +33,10 @@ public class Exercicio4 {
 			
 			for(int c = 0; c<2; c++) {
 				
-				System.out.println("Digite um valor para a primeira matriz");
+				System.out.printf("Digite um valor Matriz 1 [%d][%d]:\n", l+1, c+1);
 				matriz1[l][c] = entrada.nextDouble();
 				
-				System.out.println("Digite um valor para a segunda matriz");
+				System.out.printf("Digite um valor Matriz 2 [%d][%d]:\n", l+1, c+1);
 				matriz2[l][c] = entrada.nextDouble();	
 	
 			}
