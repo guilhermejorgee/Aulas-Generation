@@ -92,15 +92,15 @@ public class Exercicio4 {
 			
 			int constante;
 			
-			System.out.println("Digite um valor que será inserido na primeira coluna das duas matrizes");
+			System.out.println("Digite um valor que será somado com os valores na primeira coluna das duas matrizes");
 			constante = entrada.nextInt();
 			
 			
 			for(int l = 0; l<2; l++) {
 				
-				matriz1[l][0] = constante;
+				matriz1[l][0] = matriz1[l][0] + constante;
 			
-				matriz2[l][0] = constante;
+				matriz2[l][0] = matriz2[l][0] + constante;
 							
 			}
 			
