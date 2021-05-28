@@ -1,6 +1,7 @@
 package br.org.geration.blogPessoal.repository;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -13,9 +14,11 @@ public interface postagemRepository extends JpaRepository<Postagem, Long> {
 	//ID = o tipo de dado que está sendo usado no ID, no caso o long
 	//Long maíusculo, pq é no tipo primitivo, acho que o mesmo principio do Integer
 	
-	public List<Postagem> findAllByTituloContainingIgnoreCase (String titulo);
+	public List<Postagem>  findAllByTituloContainingIgnoreCase (String titulo);
 	//retorna uma lista
 	//buscar todos pelo Titulo(nome do atributo da entidade) containing(mesma coisa do like")
 	//ou seja tudo que conter os caracteres dentro dessa variavel ele vai trazer
+	
+	public Optional <Postagem> findByTitulo(String titulo);
 	
 }
