@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.org.geration.blogPessoal.model.Postagem;
-import br.org.geration.blogPessoal.repository.postagemRepository;
+import br.org.geration.blogPessoal.repository.PostagemRepository;
 
 @RestController // Para informar que essa é uma classe controladora
 @RequestMapping("/postagens") //Definir a URL que essa classe será acessada
@@ -25,7 +25,7 @@ import br.org.geration.blogPessoal.repository.postagemRepository;
 public class PostagemController {
 	
 	@Autowired // Isso da controle da interface ao spring, então agora posso instaciar ela e utiliza-la
-	private postagemRepository repository;
+	private PostagemRepository repository;
 	
 	@GetMapping //Quando houver uma requisição e ela for do tipo Get, vai disparar essa instrução
 	public ResponseEntity<List<Postagem>> getAll(){
