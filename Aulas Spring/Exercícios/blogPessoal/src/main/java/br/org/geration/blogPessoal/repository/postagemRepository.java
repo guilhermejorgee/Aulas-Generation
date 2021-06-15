@@ -3,6 +3,7 @@ package br.org.geration.blogPessoal.repository;
 import java.util.List;
 import java.util.Optional;
 
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -20,5 +21,6 @@ public interface PostagemRepository extends JpaRepository<Postagem, Long> {
 	//ou seja tudo que conter os caracteres dentro dessa variavel ele vai trazer
 	
 	public Optional <Postagem> findByTitulo(String titulo);
+
 	
 }

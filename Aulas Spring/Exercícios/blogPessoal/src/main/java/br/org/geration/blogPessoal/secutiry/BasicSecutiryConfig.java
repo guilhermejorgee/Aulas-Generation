@@ -20,6 +20,13 @@ public class BasicSecutiryConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		auth.userDetailsService(UserDetailsService);
+		
+		auth.inMemoryAuthentication()
+		.withUser("root")
+		.password(passwordEncoder().encode("Admin357/"))
+		.authorities("ROLE_USER");
+
+
 	}
 	
 	@Bean
@@ -37,5 +44,7 @@ public class BasicSecutiryConfig extends WebSecurityConfigurerAdapter {
 		.and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS) // Aqui é gerado o cookie que criará a sessão, que é do tipo STATELESS, ou seja, ela não fica guardada 
 		.and().cors() //Para habilitar o cors (CrossOrigin)
 		.and().csrf().disable();
+		
+		
 	}
 }
